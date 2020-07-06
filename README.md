@@ -15,63 +15,11 @@ Current build status
 ====================
 
 
-<table>
-    
-  <tr>
-    <td>Azure</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openff-evaluator-feedstock?branchName=master">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_python3.6.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openff-evaluator-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openff-evaluator-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.6.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openff-evaluator-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openff-evaluator-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
-    </td>
-  </tr>
-  <tr>
-    <td>Windows</td>
-    <td>
-      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
-    </td>
-  </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
+      <a href="https://dev.azure.com/simonboothroyd/feedstock-builds/_build/latest?definitionId=&branchName=master">
+        <img src="https://dev.azure.com/simonboothroyd/feedstock-builds/_apis/build/status/openff-evaluator-feedstock?branchName=master">
+      </a>
     </td>
   </tr>
 </table>
@@ -81,18 +29,18 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-openff--evaluator-green.svg)](https://anaconda.org/conda-forge/openff-evaluator) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openff-evaluator.svg)](https://anaconda.org/conda-forge/openff-evaluator) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openff-evaluator.svg)](https://anaconda.org/conda-forge/openff-evaluator) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openff-evaluator.svg)](https://anaconda.org/conda-forge/openff-evaluator) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-openff--evaluator-green.svg)](https://anaconda.org/simonboothroyd/openff-evaluator) | [![Conda Downloads](https://img.shields.io/conda/dn/simonboothroyd/openff-evaluator.svg)](https://anaconda.org/simonboothroyd/openff-evaluator) | [![Conda Version](https://img.shields.io/conda/vn/simonboothroyd/openff-evaluator.svg)](https://anaconda.org/simonboothroyd/openff-evaluator) | [![Conda Platforms](https://img.shields.io/conda/pn/simonboothroyd/openff-evaluator.svg)](https://anaconda.org/simonboothroyd/openff-evaluator) |
 
 Installing openff-evaluator
 ===========================
 
-Installing `openff-evaluator` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `openff-evaluator` from the `simonboothroyd` channel can be achieved by adding `simonboothroyd` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels simonboothroyd
 ```
 
-Once the `conda-forge` channel has been enabled, `openff-evaluator` can be installed with:
+Once the `simonboothroyd` channel has been enabled, `openff-evaluator` can be installed with:
 
 ```
 conda install openff-evaluator
@@ -101,7 +49,7 @@ conda install openff-evaluator
 It is possible to list all of the versions of `openff-evaluator` available on your platform with:
 
 ```
-conda search openff-evaluator --channel conda-forge
+conda search openff-evaluator --channel simonboothroyd
 ```
 
 

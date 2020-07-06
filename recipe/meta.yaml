@@ -4,7 +4,7 @@
 
 package:
   name: openff-evaluator
-  version: 0.1.1
+  version: {{ version }}
 
 source:
   url: https://github.com/openforcefield/{{ name }}/archive/v{{ version }}.tar.gz
@@ -13,8 +13,8 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
-  skip: true  # [win]
   preserve_egg_dir: True
+  noarch: python
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - openforcefield >=0.4.1
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - pandas
     - openmm
     - networkx
