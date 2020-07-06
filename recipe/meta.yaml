@@ -1,0 +1,58 @@
+{% set name = "openff-evaluator" %}
+{% set version = "0.1.1" %}
+{% set sha256 = "4034d973d6f08872b979d735ff981bc25b87239602ca594de3e4397e6c135bd6" %}
+
+package:
+  name: openff-evaluator
+  version: 0.1.1
+
+source:
+  url: https://github.com/openforcefield/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
+  skip: true  # [win]
+  preserve_egg_dir: True
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - openforcefield >=0.4.1
+    - numpy
+    - pandas
+    - openmm
+    - networkx
+    - pint >=0.10.1
+    - packmol
+    - pymbar >=3.0.5
+    - mdtraj >=1.9.3
+    - dask >=2.7.0
+    - distributed >=2.7.0
+    - dask-jobqueue >=0.7.0
+    - uncertainties
+    - openmmtools
+    - yank >=0.24.1
+    - pyyaml
+    - requests
+    - rdkit
+    - cmiles
+    - python-dateutil
+
+test:
+  imports:
+    - openff.evaluator
+
+about:
+  home: https://github.com/openforcefield/openff-evaluator
+  license: MIT
+  license_file: LICENSE
+  description: A physical property evaluation toolkit from the Open Forcefield Consortium.
+
+extra:
+  recipe-maintainers:
+    - simonboothroyd
