@@ -11,10 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
-  preserve_egg_dir: True
   noarch: python
+  number: 0
+  script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -vvv
 
 requirements:
   host:
