@@ -24,14 +24,13 @@ requirements:
   run:
     - python
     - openforcefield >=0.4.1
-    - {{ pin_compatible('numpy') }}
+    - numpy
     - pandas
     - openmm
     - networkx
     - pint >=0.10.1
     - packmol
     - pymbar >=3.0.5
-    - pydantic
     - mdtraj >=1.9.3
     - dask >=2.7.0
     - distributed >=2.7.0
@@ -44,6 +43,7 @@ requirements:
     - rdkit
     - cmiles
     - python-dateutil
+    - pydantic
 
 test:
   imports:
