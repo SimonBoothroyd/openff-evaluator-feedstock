@@ -5,7 +5,7 @@ Home: https://github.com/openforcefield/openff-evaluator
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-evaluator-feedstock/blob/master/LICENSE.txt)
 
 Summary: 
 
