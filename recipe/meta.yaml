@@ -1,6 +1,6 @@
 {% set name = "openff-evaluator" %}
-{% set version = "0.2.1" %}
-#{% set sha256 = "c7f8b0d8d1026855a40a33388bb391929b109c40c2900748bc04dacb8ebc7294" %}
+{% set version = "0.2.2" %}
+#{% set sha256 = "056c1089cd218354c6e145285fd0e43314242e6167dfb2fdd321f4c81c99a2dc" %}
 
 package:
   name: openff-evaluator
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
