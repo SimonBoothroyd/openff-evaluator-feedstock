@@ -1,6 +1,6 @@
 {% set name = "openff-evaluator" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "e71224e0f0dd3f85dade51ab909ed79f6a4ba1eb944a110f358bbc8f85fbb90a" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "4e8f0140b53cbfe6123e6280dfcd5fed1f266fb80cd3b357b8df94c71be20f48" %}
 
 package:
   name: openff-evaluator
