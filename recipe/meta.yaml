@@ -1,6 +1,6 @@
 {% set name = "openff-evaluator" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "4e8f0140b53cbfe6123e6280dfcd5fed1f266fb80cd3b357b8df94c71be20f48" %}
+{% set version = "0.3.2" %}
+{% set sha256 = "e01d3bf576c487ae63f3a10eb461c91512fa5f33cd7b7a18230f962f6be165f1" %}
 
 package:
   name: openff-evaluator
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - openforcefield >=0.4.1
+    - openforcefield >=0.7.1
     - numpy
     - pandas
     - openmm
